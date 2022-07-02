@@ -13,13 +13,13 @@ This is a simple console-based game which helps you learn new words each day.
 
 The principle of the game is simple:
 
-1. You upload a file called "data" with words you want to learn in German, English or Spanish, in src/main/resources
+1. You upload a file called "data" with words you want to learn in German, English or Spanish, in src/main/resources. The file must have one word per line, in order for the app to pick each word correctly.
 2. You start the main function from main.kt class.
 3. Specify the source language from the data file. Currently, only German, English or Spanish are supported (DE, EN, ES).
-4. Specify the target language, which is the language in which the word will be translated.
+4. Specify the target language, which is the language in which the source word will be translated.
 
-Then the program will output random words for the list for which you need to type the translation. For each correct translation you will receive a point. If you fail to provide the translation, the program will output the right word for you.
+Then the program will output random words from the list for which you need to type the translation. For each correct translation you will receive a point. If you fail to provide the translation, the program will output the right word for you.
 
-If you are looking to improve your vocabulary in a language, this tool could help you a lot. Think about what it's like to learn only 3 words per day. This means more than 1000 words per year! 
+If you are looking to improve your vocabulary in a language, this tool could help you a lot. It's also a great way to review words that you already know, or some that you learned a long time ago and didn't use them. Think about what it's like to learn only 3 words per day. This means more than 1000 words per year! 
 
-Feel free to push code to this repository to enhance the tool. I will be working constantly on adding new features, but also on adding unit tests.
+Feel free to push code to this repository to enhance the tool. I will be working constantly on adding new features and unit tests.
