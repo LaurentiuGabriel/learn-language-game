@@ -16,7 +16,7 @@ class TranslationService(val utils: Utils) {
     fun getTranslation(word: String, targetLang: String, sourceLang: String): String {
         val encodedWord = URLEncoder.encode(word, "utf-8")
         val request = Request.Builder()
-            .url("https://translated-mymemory---translation-memory.p.rapidapi.com/api/get?langpair=$sourceLang%7C$targetLang&q=$encodedWord&mt=1&onlyprivate=0&de=a%40b.c")
+            .url("https://translated-mymemory---translation-memory.p.rapidapi.com/get?langpair=$sourceLang%7C$targetLang&q=$encodedWord&mt=1&onlyprivate=0&de=a%40b.c")
             .get()
             .addHeader("X-RapidAPI-Key", getRapidAPIKey())
             .addHeader("X-RapidAPI-Host", "translated-mymemory---translation-memory.p.rapidapi.com")

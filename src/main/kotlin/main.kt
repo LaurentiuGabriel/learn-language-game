@@ -11,7 +11,7 @@ fun main(args: Array<String>){
     var targetLanguage = String()
     var utils = Utils()
     val translationService = TranslationService(utils)
-    val listOfLines = File("src/main/resources/data").bufferedReader().readLines()
+    val listOfLines = File("data").bufferedReader().readLines()
     var score = 0
     for(line in listOfLines){
         wordKey.add(line)
